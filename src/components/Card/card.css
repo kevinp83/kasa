@@ -1,0 +1,20 @@
+.card {
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  height: 340px;
+  transition: 0.5s all;
+  }
+
+  .card-box {
+  text-align: center;
+  display: grid;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  margin: 60px 40px;
+  padding: 70px 75px;
+  grid-gap: 50px;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 25px;
+  }
+  
