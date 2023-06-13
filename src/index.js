@@ -1,37 +1,30 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
-import Form from './pages/Form/index';
-import About from './pages/About/index';
-import Home from './pages/Home/index';
+import Home from '../src/pages/Home/index';
+import About from '../src/pages/About/index';
+import Error from '../src/pages/Error';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import Header from './components/Header';
-import Error from './components/Error';
-import Banner from './components/Banner';
-import Card from './components/Card';
 import styled from 'styled-components';
 
 const Main = styled.div `
-  max-width: 1440px;
   min-width: 600px;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  margin-left: 50px;
-  margin-right: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+  font-family: 'Montserrat', sans-serif;
 `
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
     <Router>
       <Main>
-      <Header />
-      <Banner/>
-      <Card/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
-        <Route path="/form" element={<Form />} />
         <Route path="*" element={<Error />} />
       </Routes>
       </Main>
