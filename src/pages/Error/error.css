@@ -1,0 +1,23 @@
+.error {
+    font-size: 288px;
+    text-align: center;
+    font-weight: 700;
+    color: #ff6060;
+    margin-top: 160px;
+    margin-bottom: 35px;
+}
+
+.oups {
+    font-size: 36px;
+    text-align: center;
+    font-weight: 500;
+    color: #ff6060;
+    margin-bottom: 130px;
+}
+
+.link {
+    font-size: 18px;
+    justify-content: center;
+    font-weight: 500;
+    color: #ff6060;
+}

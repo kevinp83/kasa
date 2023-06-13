@@ -6,8 +6,9 @@ const Card = () => {
   return (
     <div className='card-box'>
       {hostList.map((host) => (
-      <div className='card' key={host.id} style={{ backgroundImage: `url(${host.cover})` }}>
-        <div className='title'>{host.title}</div>
+        <div className='card' key={host.id} >
+          <img src={host.cover} alt={host.title}/>
+          <p className='title'>{host.title}</p>
       </div>
       ))}
     </div>

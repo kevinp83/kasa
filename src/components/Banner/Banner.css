@@ -1,15 +1,7 @@
-.banner {
-    background-image: url(../../../public/home-img.png) center/cover;
-    padding: 100px;
-    color: #fff;
-    border-radius: 25px;
-    margin: 50px;
-    text-align: center;
-    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3));
-    
-}
 
-.banner h1 {
-    font-size: 48px;
-    font-weight: 500;
+@media screen and (max-width:1000px) {
+    .banner {
+        height: 110px;
+        margin: 0 20px;
+    }
 }
