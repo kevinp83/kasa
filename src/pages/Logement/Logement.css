@@ -1,0 +1,26 @@
+.tags-rating-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tags-logement {
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .rating-logement {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .slides-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+  }
+  
+  .slide {
+    width: calc(50% - 37.5px);
+  }

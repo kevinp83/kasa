@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import "../../components/Slide/slide.css";
 
-const Slide = ({ title, description }) => {
+const Slide = ({ title, content }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleSlide = () => {
@@ -19,7 +19,7 @@ const Slide = ({ title, description }) => {
           className={isOpen ? "rotate-icon" : ""}
         />
       </p>
-      {isOpen && <div className="description">{description}</div>}
+      {isOpen && <div className="description">{content}</div>}
     </div>
   );
 };

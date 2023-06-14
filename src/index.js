@@ -2,10 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import Home from '../src/pages/Home/index';
+import Logement from '../src/pages/Logement';
 import About from '../src/pages/About/index';
 import Error from '../src/pages/Error';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import styled from 'styled-components';
+
 
 const Main = styled.div `
   min-width: 600px;
@@ -24,6 +26,7 @@ root.render(
       <Main>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/logement/:id" element={<Logement />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
