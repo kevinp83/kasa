@@ -9,7 +9,7 @@ function LocationLogement(props) {
 
     return (
         <div className="Location-logement">
-            <h1>{selectedHost.location}</h1>
+            <span>{selectedHost.location}</span>
         </div>
     )
 }

@@ -17,6 +17,7 @@
     font-size: 24px;
 }
 
-.link-style:hover {
-    border-bottom: 1px solid #FF6060;
+.active {
+    text-decoration: underline;
+    color: #FF6060;
 }

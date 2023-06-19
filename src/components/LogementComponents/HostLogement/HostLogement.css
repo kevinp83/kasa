@@ -1,3 +1,20 @@
 .Host-logement {
     color: #ff6060;
+    display: flex;
+    justify-content: end;
+}
+
+.Host-logement img {
+    width: 64px;
+    height: 64px;
+    border-radius: 32px;
+}
+
+.Host-logement span {
+    font-size: 18px;
+    font-weight: 500;
+    padding-right: 10px;
+    width: 80px;
+    text-align: right;
+    align-self: center;
 }

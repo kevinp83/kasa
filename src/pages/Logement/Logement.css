@@ -1,3 +1,7 @@
+.banner {
+  height: 225px;
+}
+
 .content-title {
   display: flex;
   flex-direction: column;
@@ -41,6 +45,7 @@
 @media screen and (max-width: 720px) {
   .slides-container {
     flex-direction: column;
+    gap: 10px;
   }
 
   .slide {
@@ -52,4 +57,17 @@
     justify-content: flex-start
   }
 
+  .content-host {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 15px;
+  }
+
+  .content-title {
+    gap: 12px;
+  }
+
+  .banner {
+    height: 115px;
+  }
 }

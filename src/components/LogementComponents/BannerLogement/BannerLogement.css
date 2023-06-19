@@ -1,6 +1,5 @@
 .banner {
     position: relative;
-    height: 415px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
@@ -46,3 +45,14 @@
     color: #ffffff;
   }
 
+@media screen and (max-width: 720px) {
+
+  .chevron {
+    width: 12px;
+    height: 20px;
+  }
+
+  .currentImageIndex {
+    display: none;
+  }
+}

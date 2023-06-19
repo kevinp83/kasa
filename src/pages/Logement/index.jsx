@@ -3,7 +3,7 @@ import Header from '../../components/Header';
 import BannerLogement from '../../components/LogementComponents/BannerLogement'
 import DescriptionLogement from '../../components/LogementComponents/DescriptionLogement';
 import EquipmentsLogement from '../../components/LogementComponents/EquipmentsLogement';
-import HostLogement from '../../components/LogementComponents/HostLogement';
+import HostLogement from '../../components/LogementComponents/HostLogement/HostLogement';
 import LocationLogement from '../../components/LogementComponents/LocationLogement';
 import TitleLogement from '../../components/LogementComponents/TitleLogement';
 import StarRating from '../../components/LogementComponents/StarRating';
@@ -20,28 +20,24 @@ function Logement(props) {
   return (
     <div>
       <Header />
-      <BannerLogement host={host} />
-      <div className='title-host'>
-        <div>
+      <BannerLogement className='banner' host={host} />
+      <div className="title-host">
+        <div className='content-title'>
           <TitleLogement title={host.title} />
           <LocationLogement location={host.location} />
-        </div>
-        <HostLogement host={host.host} />
-      </div>
-      <div className="tags-rating-container">
-        <div className="tags-logement">
           <TagsLogement tags={host.tags} />
         </div>
-        <div className="rating-logement">
-          <StarRating rating={host.rating}/>
+        <div className='content-host'>
+          <HostLogement className='host' host={host.host} />
+          <StarRating rating={host.rating} />
         </div>
       </div>
       <div className="slides-container">
         <div className="slide">
-          <DescriptionLogement description={host.description} />
+          <DescriptionLogement className="description" description={host.description} />
         </div>
         <div className="slide">
-          <EquipmentsLogement equipments={host.equipments} />
+          <EquipmentsLogement className="equipment" equipments={host.equipments} />
         </div>
       </div>
       <Footer />

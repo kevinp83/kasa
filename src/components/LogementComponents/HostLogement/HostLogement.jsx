@@ -9,7 +9,7 @@ function HostLogement(props) {
 
     return (
         <div className="Host-logement">
-            <h1>{selectedHost.host.name}</h1>
+            <span>{selectedHost.host.name}</span>
             <img src={selectedHost.host.picture} alt={selectedHost.host.name} />
         </div>
     )

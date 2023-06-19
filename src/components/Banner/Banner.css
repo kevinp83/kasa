@@ -1,7 +1,48 @@
+.banner-title {
+    color: white;
+    font-size: 3.4vw;
+    font-weight: 500;
+    line-height: 68px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
 
-@media screen and (max-width:1000px) {
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+  }
+
+.banner {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    height: 223px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 60px;
+    mix-blend-mode: darken;
+  }
+
+@media screen and (max-width:720px) {
     .banner {
-        height: 110px;
+        height: 120px;
         margin: 0 20px;
+        margin-top: 155px;
+    }
+
+    .banner-title {
+        font-size: 29px;
+        font-weight: 500;
+        white-space: pre-line;
+        text-align:left;
+        width: 100%;
+        padding-left: 30px;
+        line-height: 1;
     }
 }

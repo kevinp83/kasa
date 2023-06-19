@@ -1,0 +1,10 @@
+.equipment-list {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.equipment-list li {
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 3px;
+}

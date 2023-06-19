@@ -6,7 +6,7 @@
   transition: 0.5s all;
   }
 
-  .card-box {
+.card-box {
   text-align: center;
   display: grid;
   background-color: #f7f7f7;
@@ -19,19 +19,38 @@
   border-radius: 25px;
   }
   
-  .card img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    object-fit: cover;
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
   }
 
-  .card p {
-    position: absolute;
-    bottom: -10px;
-    padding-left: 10px;
-    color: #fff;
-    font-size: 1.75vw;
-    text-align: initial;
-    text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
+.card p {
+  position: absolute;
+  bottom: -10px;
+  padding-left: 10px;
+  color: #fff;
+  font-size: 1.75vw;
+  text-align: initial;
+  text-shadow: 3px 3px 4px rgba(0, 0, 0, 1);
   }
+
+@media (max-width: 720px) {
+
+.card-box {
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 20px;
+  background-color: white;
+  padding: 0;
+  gap: 20px;
+  }
+
+.card {
+  border-radius: 10px;
+}
+
+.card p {
+  font-size: 25px;
+}
+}
