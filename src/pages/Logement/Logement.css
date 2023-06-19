@@ -1,26 +1,55 @@
-.tags-rating-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .tags-logement {
-    display: flex;
-    justify-content: flex-start;
-  }
-  
-  .rating-logement {
-    display: flex;
-    justify-content: flex-end;
+.content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 8px;
+}
+
+.title-host {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.title-host .host {
+  margin-left: auto;
+}
+
+.content-host {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.slides-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  margin-bottom: 20px;
+}
+
+.slide {
+  flex: 1;
+  width: calc(50% - 37.5px);
+}
+
+.description, .equipment {
+  height: 150px;
+}
+
+@media screen and (max-width: 720px) {
+  .slides-container {
+    flex-direction: column;
   }
 
-  .slides-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 75px;
-  }
-  
   .slide {
-    width: calc(50% - 37.5px);
+    width: 100%;
   }
+
+  .title-host {
+    flex-direction: column;
+    justify-content: flex-start
+  }
+
+}
