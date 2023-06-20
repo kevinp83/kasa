@@ -16,8 +16,24 @@
 }
 
 .link {
+    display: flex;
     font-size: 18px;
     justify-content: center;
     font-weight: 500;
     color: #ff6060;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    .error {
+        font-size: 96px;
+    }
+
+    .oups {
+        font-size: 18px;
+    }
+
+    .link {
+        font-size: 14px;
+    }
 }

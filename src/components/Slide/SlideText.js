@@ -1,5 +1,6 @@
 import React from "react";
-import Slide from "./slide"
+import Slide from "./slide";
+import "./slideText.css";
 
 const SlideText = () => {
   return (

@@ -6,31 +6,37 @@ import Logement from '../src/pages/Logement';
 import About from '../src/pages/About/index';
 import Error from '../src/pages/Error';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import styled from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
-
-const Main = styled.div `
+const GlobalStyle = createGlobalStyle`
+body {
   min-width: 600px;
+  max-width: 1450px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
   font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+  padding-inline-start: 0;
+}
 `
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
   <React.StrictMode>
     <Router>
-      <Main>
+      <GlobalStyle />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/logement/:id" element={<Logement />} />
         <Route path="/about" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      </Main>
     </Router>
   </React.StrictMode>
 );

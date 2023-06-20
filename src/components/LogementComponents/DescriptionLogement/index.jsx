@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
 import hostList from "../../../datas";
-import Slide from "../../../pages/About/slide";
+import Slide from "../../Slide/slide";
 import './DescriptionLogement.css';
 
 function DescriptionLogement(props) {

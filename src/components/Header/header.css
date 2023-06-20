@@ -5,7 +5,7 @@
     justify-content: space-between;
 }
 
-.link {
+.link-header {
     display: flex;
     gap: 45px;
 }
@@ -20,4 +20,20 @@
 .active {
     text-decoration: underline;
     color: #FF6060;
+}
+
+@media screen and (max-width: 720px) {
+    .logo img {
+        width: 145px;
+        height: 47px;
+    }
+
+    .link-style {
+        font-size: 12px;
+    }
+
+    .link-header {
+        gap: 10px;
+        margin-bottom: 0;
+    }
 }

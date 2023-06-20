@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import "../../components/Slide/slide.css";
 
 const Slide = ({ title, content }) => {
@@ -11,11 +11,11 @@ const Slide = ({ title, content }) => {
   };
 
   return (
-    <div>
+    <div className="drop-down-content">
       <p onClick={toggleSlide} className="drop-down">
         <span>{title}</span>
         <FontAwesomeIcon
-          icon={faChevronUp}
+          icon={faChevronDown}
           className={isOpen ? "rotate-icon" : ""}
         />
       </p>

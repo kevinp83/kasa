@@ -1,8 +1,6 @@
 .drop-down {
     background: #ff6060;
     font-size: 24px;
-    margin-top: 20px;
-    margin-bottom: 0;
     padding: 10px 20px 10px 15px;
     border-radius: 5px;
     color: #fff;
@@ -10,11 +8,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 0;
 }
 
 .description {
     background: #F6F6F6;
-    font-size: 20px;
+    font-size: 19px;
     padding: 10px 20px 10px 15px;
     border-radius: 5px;
     color: #ff6060;
@@ -22,6 +21,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
 }
 
 @keyframes rotate180 {
@@ -49,3 +49,9 @@
   .rotate-icon-reverse {
     animation: rotate180Reverse 0.3s linear forwards;
 }
+
+@media screen and (max-width: 720px) {
+  .description {
+    font-size: 2.5vw;
+  }
+};
