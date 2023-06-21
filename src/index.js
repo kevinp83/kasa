@@ -10,10 +10,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
 body {
+  margin: auto;
   min-width: 600px;
   max-width: 1450px;
   padding-top: 30px;
-  padding-bottom: 30px;
   padding-left: 100px;
   padding-right: 100px;
   font-family: 'Montserrat', sans-serif;
@@ -22,6 +22,15 @@ body {
 ul {
   padding-inline-start: 0;
 }
+
+@media screen and (max-width: 720px) {
+  body {
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 `
 
 

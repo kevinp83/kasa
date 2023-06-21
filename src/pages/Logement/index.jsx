@@ -20,7 +20,7 @@ function Logement(props) {
   return (
     <div>
       <Header />
-      <BannerLogement className='banner' host={host} />
+      <BannerLogement className='banner-logement' host={host} />
       <div className="title-host">
         <div className='content-title'>
           <TitleLogement title={host.title} />

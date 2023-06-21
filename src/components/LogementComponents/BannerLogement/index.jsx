@@ -24,7 +24,7 @@ const { id } = useParams();
   };
 
   return (
-    <div className='banner'>
+    <div className='banner-logement'>
       <img className='banner-img' src={host.pictures[currentImageIndex]} alt='{host.title}'/>
       
       {host.pictures.length > 1 && (

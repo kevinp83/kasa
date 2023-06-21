@@ -1,8 +1,9 @@
-.banner {
+.banner-logement {
     position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
+    height: 415px;
   }
 
   .banner-img {
@@ -54,5 +55,9 @@
 
   .currentImageIndex {
     display: none;
+  }
+
+  .banner-logement {
+    height: 255px;
   }
 }
