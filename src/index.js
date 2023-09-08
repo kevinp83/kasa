@@ -30,9 +30,7 @@ ul {
     padding-right: 20px;
   }
 }
-
 `
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

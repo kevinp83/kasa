@@ -8,4 +8,5 @@
     background: #000;
     height: 200px;
     width: 100%;
+    flex-shrink: 0;
 }
